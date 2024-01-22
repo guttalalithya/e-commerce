@@ -1,0 +1,116 @@
+.LoadingContainer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+
+
+.Loader > img {
+    background-image: radial-gradient(black,transparent,transparent);
+    transition: .4s;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}
+
+
+.Loader{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.loader1{
+    border: 10px solid;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    border-top-color: rgb(255, 200, 0)  ;
+    border-bottom-color:rgb(255, 200, 0) ;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    animation: rotate 1.5s infinite cubic-bezier(0.3, 0.575, 0.565, 1);
+}
+
+
+.loader2{
+    position: absolute;
+    border: 10px solid;
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    border-top-color: rgb(199, 161, 25)  ;
+    border-bottom-color:rgb(201, 163, 27) ;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    animation: rotate 1.5s infinite cubic-bezier(0.3, 0.575, 0.565, 1);
+    animation-delay: .1s;
+}
+
+
+
+.loader3{
+    position: absolute;
+    border: 10px solid;
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+    border-top-color: rgb(145, 124, 50)  ;
+    border-bottom-color:rgb(138, 118, 45) ;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    animation: rotate 1.5s infinite cubic-bezier(0.3, 0.575, 0.565, 1);
+    animation-delay: .2s;
+}
+
+
+.loader4{
+    position: absolute;
+    border: 10px solid;
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    border-top-color: rgb(71, 66, 50)  ;
+    border-bottom-color:rgb(69, 65, 51) ;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    animation: rotate 1.5s infinite cubic-bezier(0.3, 0.575, 0.565, 1);
+    animation-delay: .3s;
+}
+
+.loader5{
+    position: absolute;
+    border: 10px solid;
+    width: 230px;
+    height: 230px;
+    z-index: 9999;
+    border-radius: 100%;
+    border-top-color: rgb(0, 0, 0)  ;
+    border-bottom-color:rgb(0, 0, 0) ;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    animation: rotate 1.5s infinite cubic-bezier(0.3, 0.575, 0.565, 1);
+    animation-delay: .3s;
+}
+
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

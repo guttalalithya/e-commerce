@@ -1,0 +1,264 @@
+.LoginContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Logintitle{
+    font-size: 60px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.loginform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.logindetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+
+.logindetails>label{
+    font-size: 26px;
+    width: max-content;
+}
+
+
+.logindetails>[type='email'],.logindetails>[type='password']{
+    width: 600px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(68, 67, 67);
+    background-color: transparent;
+}
+
+
+.darklogin>[type='email'],.darklogin>[type='password']{
+    border-color: gray;
+    color: #fff;
+}
+
+
+.logindetails>[type='email']:focus,.logindetails>[type='password']:focus{
+    outline: none;
+    border-width: 2px;
+    border-color: black;
+}
+
+
+.darklogin>[type='email']:focus,.darklogin>[type='password']:focus{
+    border-color: #fff;
+}
+
+
+
+
+.forgetremember{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.remember{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+
+#remember{
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    accent-color: rgb(79, 19, 175);
+}
+
+
+
+
+
+
+
+.forgetpass{
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
+}
+
+.darkforget{
+    color: #fff;
+}
+
+
+.forgetpass:hover{
+    text-decoration: underline;
+}
+
+
+.newhere{
+    display: flex;
+    width: 100%;
+    font-size: 23px;
+    gap: 10px;
+}
+
+
+.register{
+    color: rgb(79, 19, 175);
+}
+
+
+
+.login{
+    background-color: rgb(79, 19, 175);
+    color: white;
+    font-size: 23px;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+    border: none;
+}
+
+.login:hover{
+    background-color: rgb(61, 15, 137);
+}
+
+
+
+@media (max-width:700px) {
+    .Logintitle{
+        font-size: 45px
+    }
+
+    .logindetails>label{
+        font-size: 23px
+    }
+    .logindetails>[type='email'],.logindetails>[type='password']{
+        width: 500px
+    }
+    #remember{
+        width: 23px;
+        height: 23px
+    }
+}
+
+
+
+@media (max-width:600px) {
+    .Logintitle{
+        font-size: 45px
+    }
+
+    .logindetails>label{
+        font-size: 20px
+    }
+    .logindetails>[type='email'],.logindetails>[type='password']{
+        width: 400px;
+        font-size: 18px;
+    }
+    #remember{
+        width: 20px;
+        height: 20px
+    }
+    .remember{
+        font-size: 20px;
+    }
+    .forgetpass{
+        font-size: 20px;
+    }
+    .newhere{
+        font-size: 20px;
+    }
+}
+
+
+
+
+@media (max-width:550px) {
+    .Logintitle{
+        font-size: 26px
+    }
+
+    .logindetails>label{
+        font-size: 18px
+    }
+    .logindetails>[type='email'],.logindetails>[type='password']{
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+    }
+    #remember{
+        width: 15px;
+        height: 15px
+    }
+    .remember{
+        font-size: 16px;
+    }
+    .forgetpass{
+        font-size: 16px;
+    }
+    .newhere{
+        font-size: 14px;
+    }
+    .login{
+        font-size: 16px;
+        height: 40px;
+    }
+}
+
+
+
+@media (max-width:550px) {
+    .Logintitle{
+        font-size: 23px
+    }
+
+    
+    .logindetails>label{
+        font-size: 12px
+    }
+    .logindetails>[type='email'],.logindetails>[type='password']{
+        width: 230px;
+        height: 30px;
+        font-size: 11px;
+    }
+    #remember{
+        width: 10px;
+        height: 10px
+    }
+    .remember{
+        font-size: 12px;
+    }
+    .forgetpass{
+        font-size: 12px;
+    }
+    .newhere{
+        font-size: 12px;
+    }
+    .login{
+        font-size: 14px;
+        height: 30px;
+    }
+}

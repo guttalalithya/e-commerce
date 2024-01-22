@@ -1,0 +1,239 @@
+.RegisterContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Registertitle{
+    font-size: 60px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.Registerform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.Registerdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+
+.Registerdetails>label{
+    font-size: 26px;
+    width: max-content;
+}
+
+
+.Registerdetails>[type='email'],.Registerdetails>[type='password']{
+    width: 600px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(68, 67, 67);
+    background-color: transparent;
+}
+
+
+.darkRegister>[type='email'],.darkRegister>[type='password']{
+    border-color: gray;
+    color: #fff;
+}
+
+
+.Registerdetails>[type='email']:focus,.Registerdetails>[type='password']:focus{
+    outline: none;
+    border-width: 2px;
+    border-color: black;
+}
+
+
+.darkRegister>[type='email']:focus,.darkRegister>[type='password']:focus{
+    border-color: #fff;
+}
+
+
+
+
+
+
+.AgreeTC{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 23px;
+}
+
+
+#AgreeTC{
+    height: 23px;
+    width: 23px;
+    padding: 0;
+    accent-color: rgb(79, 19, 175);
+}
+
+
+
+
+
+
+
+
+
+
+
+.newhere{
+    display: flex;
+    width: 100%;
+    font-size: 23px;
+    gap: 10px;
+}
+
+
+.register{
+    color: rgb(79, 19, 175);
+}
+
+
+
+.Register{
+    background-color: rgb(79, 19, 175);
+    color: white;
+    font-size: 23px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+    border: none;
+}
+
+.Register:hover{
+    background-color: rgb(61, 15, 137);
+}
+
+
+
+@media (max-width:700px) {
+    .Registertitle{
+        font-size: 45px
+    }
+
+    .Registerdetails>label{
+        font-size: 23px
+    }
+    .Registerdetails>[type='email'],.Registerdetails>[type='password']{
+        width: 500px
+    }
+    #AgreeTC{
+        width: 23px;
+        height: 23px
+    }
+}
+
+
+
+@media (max-width:600px) {
+    .Registertitle{
+        font-size: 45px
+    }
+
+    .Registerdetails>label{
+        font-size: 20px
+    }
+    .Registerdetails>[type='email'],.Registerdetails>[type='password']{
+        width: 400px;
+        font-size: 18px;
+    }
+    #AgreeTC{
+        width: 20px;
+        height: 20px
+    }
+    .AgreeTC{
+        font-size: 20px;
+    }
+    .newhere{
+        font-size: 20px;
+    }
+}
+
+
+
+
+@media (max-width:550px) {
+    .Registertitle{
+        font-size: 26px
+    }
+
+    .Registerdetails>label{
+        font-size: 18px
+    }
+    .Registerdetails>[type='email'],.Registerdetails>[type='password']{
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+    }
+    #AgreeTC{
+        width: 15px;
+        height: 15px
+    }
+    .AgreeTC{
+        font-size: 16px;
+    }
+    .newhere{
+        font-size: 14px;
+    }
+    .Register{
+        font-size: 16px;
+        height: 40px;
+    }
+}
+
+
+
+@media (max-width:550px) {
+    .Registertitle{
+        font-size: 23px
+    }
+
+    
+    .Registerdetails>label{
+        font-size: 12px
+    }
+    .Registerdetails>[type='email'],.Registerdetails>[type='password']{
+        width: 230px;
+        height: 30px;
+        font-size: 11px;
+    }
+    #AgreeTC{
+        width: 10px;
+        height: 10px
+    }
+    .AgreeTC{
+        font-size: 12px;
+    }
+    .newhere{
+        font-size: 12px;
+    }
+    .Register{
+        font-size: 14px;
+        height: 30px;
+    }
+}

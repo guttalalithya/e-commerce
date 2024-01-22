@@ -1,0 +1,528 @@
+.MenuContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+    position: relative;
+}
+
+.dark{
+    color: #fff;
+}
+
+
+
+
+.Menu{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    backdrop-filter: blur(5px);
+    background-color: #ffffff3d;
+}
+
+
+.darkMenu{
+    background-color: #00000080;
+}
+
+
+
+.link{
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 500;
+    color: rgb(84, 84, 84);
+    transition: .4s;
+}
+
+.link::after{
+    position: absolute;
+    display: flex;
+    content: '';
+    transition: .4s;
+    position: relative;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transform-origin: right;
+}
+
+
+.link:hover{
+    color: rgb(90, 90, 90);
+}
+
+.link:hover::after{
+    width: 100%;
+}
+
+.active{
+    color: black;
+    position: relative;
+    transition: .4s;
+    border-bottom: 1px solid;
+}
+
+
+.active:hover{
+    color: black;
+}
+
+
+
+
+.logo{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+
+.websitelogo{
+    width: 100px;
+    animation: roll 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+@keyframes roll {
+    0%{
+        transform: translateX(50%) rotate(0deg);
+    }
+    100%{
+        transform: translateX(0%) rotate(-360deg);
+    }
+}
+
+.logolink{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: flex;
+}
+
+.logolink>h1{
+    font-family:cursive;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    animation: slideright 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes slideright {
+    0%{
+        opacity: 0;
+        transform: translatex(-150%);
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+.MenuList{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.user{
+    display:flex ;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+}
+
+
+.button{
+    display: flex;
+    border: 1px solid;
+    gap: 6px;
+    height: 50px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .4s;
+    transform-origin: left;
+}
+
+.button:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+.btnactive{
+    background-color: black;
+    color: aliceblue;   
+}
+
+
+
+#hamburger{
+    display: none;
+}
+
+.hamburger{
+    display:none;
+    cursor: pointer;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    flex-direction: column;
+    gap: 6px;
+    width: 50%;
+}
+
+.hamburger>label{
+    background-color: gray;
+    width: 40px;
+    min-height: 5px;
+    max-height: 5px;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 10px;
+}
+
+.hamburger:hover>label{
+    background-color: black;
+}
+
+
+#hamburger:checked~.Menu>.logo>.hamburger>:nth-child(2){
+    opacity: 0;
+}
+
+#hamburger:checked~.Menu>.logo>.hamburger>:nth-child(1){
+    transform-origin: left;
+    transform: rotate(45deg) ;
+}
+
+#hamburger:checked~.Menu>.logo>.hamburger>:nth-child(3){
+    transform-origin: top;
+    transform: rotate(-45deg) translate(-1px,-10px);
+}
+
+
+.theme{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#Sun{
+    color: rgb(228, 156, 22);
+    filter: drop-shadow(0px 0px 20px rgb(255, 211, 130));
+}
+
+#Moon{
+    color: rgb(236, 236, 236);
+    filter: drop-shadow(0px 0px 20px rgb(255, 255, 255));
+}
+
+.logotheme{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.light{
+    color: #e2e2e2;
+}
+
+
+.lightactive{
+    color: rgb(255, 255, 255);
+    position: relative;
+    transition: .4s;
+    border-bottom: 1px solid;
+}
+
+
+.lightactive:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.light::after{
+    position: absolute;
+    display: flex;
+    content: '';
+    transition: .4s;
+    position: relative;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transform-origin: right;
+}
+
+
+.light:hover{
+    color: rgb(255, 255, 255);
+}
+
+.light:hover::after{
+    width: 100%;
+    transform-origin: right;
+}
+
+
+
+.lightbtn{
+    display: flex;
+    border: 1px solid;
+    gap: 6px;
+    height: 50px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .4s;
+    transform-origin: left;
+    color: #c5c5c5;
+}
+
+
+.lightbtnactive{
+    display: flex;
+    border: 1px solid;
+    gap: 6px;
+    height: 50px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .4s;
+    transform-origin: left;
+    color: #c5c5c5; 
+}
+
+
+.lightbtn:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+.lightbtnactive{
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+}
+
+
+
+
+.Outlet{
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+}
+
+
+.footer{
+    height: max-content;
+    width: 100%;
+}
+
+
+@media (max-width:1400px) {
+    .hamburger{
+        display: flex;
+    }
+    .Menu{
+        flex-direction: column;
+        height: 100px;
+        overflow: hidden;
+        transition: .4s;
+    }
+    .MenuList{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .user{
+        padding: 10px;
+    }
+    #hamburger:checked~.Menu{
+        height: 470px;
+    }
+    .theme{
+        justify-content:center;
+
+    }
+
+}
+
+
+
+
+@media (max-width:700px) {
+    
+    .logolink{
+        transition: .4s;
+        font-size: 16px;
+    }
+    .Menu{
+        flex-direction: column;
+        height: 100px;
+        overflow: hidden;
+        transition: .4s;
+    }
+
+    .hamburger>label{
+        width: 30px;
+    }
+
+    #hamburger:checked~.Menu>.logo>.hamburger>:nth-child(1){
+        transform-origin: left;
+        transform: rotate(45deg) ;
+    }
+    
+    #hamburger:checked~.Menu>.logo>.hamburger>:nth-child(3){
+        transform-origin: top;
+        transform: rotate(-45deg) translate(3px,-11px);
+    }
+    
+
+    .MenuList{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .link{
+        font-size: 23px;
+    }
+
+    .user{
+        flex-wrap: wrap;
+    }
+
+    .button,.lightbtn,.lightbtnactive{
+        font-size: 18px;
+    }
+
+    .user{
+        padding: 10px;
+    }
+    #hamburger:checked~.Menu{
+        height: 450px;
+    }
+
+}
+
+
+
+
+@media (max-width:450px) {
+    #hamburger:checked~.Menu{
+        height: 380px;
+    }
+    .Menu{
+        height: 70px;
+    }
+    .logolink{
+        font-size: 12px;
+    }
+    .theme{
+        font-size: 23px;
+    }
+    .link{
+        font-size: 16px;
+    }
+
+    .button,.lightbtn,.lightbtnactive{
+        height: 40px;
+        width: 110px;
+        font-size: 16px;
+    }
+
+    .hamburger>label{
+        width: 25px;
+        min-height: 3px;
+        max-height: 3px;
+    }
+
+    #hamburger:checked~.Menu>.logo>.hamburger>:nth-child(1){
+        transform-origin: left;
+        transform: rotate(45deg) ;
+    }
+    
+    #hamburger:checked~.Menu>.logo>.hamburger>:nth-child(3){
+        transform-origin: top;
+        transform: rotate(-45deg) translate(3px,-9px);
+    }
+}
+
+
+
+
+@media (max-width:300px) {
+    .Menu{
+        height: 70px;
+    }
+    .logolink{
+        font-size: 11px;
+    }
+
+    .hamburger{
+        gap: 5px;
+    }
+
+    .hamburger>label{
+        width: 25px;
+        min-height: 3px;
+        max-height: 3px;
+    }
+
+    #hamburger:checked~.Menu{
+        height: 400px;
+    }
+    .theme{
+        font-size: 20px;
+    }
+    .link{
+        font-size: 16px;
+    }
+
+    .button,.lightbtn,.lightbtnactive{
+        height: 40px;
+        width: 110px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:250px) {
+    #hamburger:checked~.Menu{
+        height: 460px;
+    }
+}
+
+
+

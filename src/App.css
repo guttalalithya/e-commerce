@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  transition: .4s;
+  max-height: max-content;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.darkcolor{
+  background-color: black;
+}

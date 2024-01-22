@@ -1,0 +1,1521 @@
+.aboutdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left:100px;
+    width: 50%;
+}
+
+
+
+
+
+.aboutdiv>h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.aboutdiv>p{
+    font-size: 26px;
+    text-align: justify;
+    font-family: cursive;
+}
+
+
+
+.aboutus{
+    align-items: center;
+    gap: 0px;
+    backdrop-filter: blur(5px);
+    background-image: url(./about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0px -300px;
+    padding: 0;
+    width: 100%;
+    height: 200px;
+}
+
+
+
+.aboutcontainer{
+    display: flex;
+    height: 200px;
+}
+
+.mainabt{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,rgba(25, 25, 173, 0.511),rgba(73, 12, 171, 0.445));
+}
+
+.mainabt>h1{
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mainabt>p{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+.storydiv,.Missiondiv,.productdiv,.customer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.square{
+    position:relative;
+    width: max-content;
+    height: max-content;
+    width: 600px;
+    height: 600px;
+}
+
+
+.square::after{
+    display: flex;
+    position: absolute;
+    content: '';
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    border-radius: 30px;
+    background-image: url(./Company.jpeg);
+    background-size: cover;
+    box-shadow: 3px 3px 20px rgb(51, 51, 51) inset;
+}
+
+
+.square::before{
+    display: flex;
+    position: absolute;
+    content: '';
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.36) inset;
+    border-radius: 30px;
+    z-index: 10;
+    background-image: linear-gradient(to top right ,rgba(19, 19, 217, 0.256),rgba(153, 98, 198, 0.316),rgba(170, 0, 255, 0.363));
+
+}
+
+
+.storysquare{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:3%;
+    right: 24%;
+    box-shadow: 3px 3px 20px rgba(51, 51, 51, 0.323) inset;
+    border-radius: 10px;
+    transform: rotate(60deg);
+    background-image: linear-gradient(to top left ,rgba(19, 19, 217, 0.716),rgba(90, 38, 194, 0.684),rgba(170, 0, 255, 0.363));
+}  
+
+
+
+.Missiondiv{
+    flex-direction: row-reverse;
+}
+
+
+
+.mission::after{
+    background-image: url(./mission.jpg);
+    transform: translate(-50%, -50%) rotate(-40deg);
+}
+
+
+.mission::before{
+    background-image: linear-gradient(to top right ,rgba(124, 124, 228, 0.256),rgba(187, 147, 219, 0.316),rgba(199, 140, 228, 0.363));
+    transform: translate(-50%, -50%) rotate(-40deg);
+}
+
+
+.missionsquare{
+    transform: rotate(-40deg);
+    top:30%;
+    left: 5%;
+    z-index: 12;
+}
+
+.missionsquare2{
+    transform: rotate(-40deg);
+    top:24%;
+    left: 12%;
+    z-index: 12;
+}
+
+
+
+.product::after{
+    background-image: url(./products.jpg);
+    background-position: 0;
+    transform: translate(-50%, -50%) rotate(-40deg);
+
+}
+
+
+.product::before{
+    background-image: linear-gradient(to top right ,rgba(124, 124, 228, 0.256),rgba(187, 147, 219, 0.316),rgba(199, 140, 228, 0.363));
+    transform: translate(-50%, -50%) rotate(-40deg);
+}
+
+
+
+.productsquare{
+    transform: rotate(-40deg);
+    top:1%;
+    right: 31%;
+    z-index: 12;
+    background-image: linear-gradient(to top left ,rgba(253, 216, 146, 0.716),rgba(255, 209, 109, 0.684),rgba(255, 166, 0, 0.363));
+}
+
+.productsquare2{
+    transform: rotate(-90deg);
+    top:-5%;
+    right: 42%;
+    z-index: 12;
+    background-image: linear-gradient(to top left ,rgba(253, 216, 146, 0.716),rgba(255, 209, 109, 0.684),rgba(255, 166, 0, 0.363));
+}
+
+.productsquare3{
+    transform: rotate(-40deg);
+    top:0%;
+    right: 53%;
+    z-index: 12;
+    background-image: linear-gradient(to top left ,rgba(253, 216, 146, 0.716),rgba(255, 209, 109, 0.684),rgba(255, 173, 19, 0.371));
+}
+
+
+
+
+
+
+
+
+.customer{
+    flex-direction: row-reverse;
+}
+
+
+
+
+.circle{
+    position:relative;
+    width: max-content;
+    height: max-content;
+    width: 600px;
+    height: 600px;
+}
+
+
+.circleimg{
+    background-size: 50%;
+    background-position: 110% 86%;
+    background-image: url(./customersatisfaction.png);
+    background-attachment: fixed;
+}
+
+
+.circle1{
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    left: 0;
+    top: 5%;
+}
+
+.circle2{
+    position: absolute;
+    border-radius: 50%;
+    top: 35%;
+    width: 200px;
+    height: 200px;
+}
+
+.circle3{
+    position: absolute;
+    border-radius: 50%;
+    top: 18%;
+    right: 32%;
+    width: 100px;
+    height: 100px;
+}
+
+.circle4{
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.circle5{
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+
+.circle6{
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: -17%;
+    width: 150px;
+    height: 150px;
+}
+
+
+.feedbackform{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.feedbackele{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.feedbackele>label{
+    font-size: 26px;
+    padding-left: 10px;
+}
+
+
+.feedbackele>[type='text'],.feedbackele>[type='email']{
+    width: 600px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(77, 77, 77);
+    outline: none;
+}
+
+.feedbackele>[type='text']:focus,.feedbackele>[type='email']:focus,.feedbackele>textarea:focus{
+    border: 3px solid black;
+}
+
+
+.darkfeedbackele>[type='text'],.darkfeedbackele>[type='email'],.darkfeedbackele>textarea{
+    color: #fff;
+}
+
+.darkfeedbackele>[type='text']:focus,.darkfeedbackele>[type='email']:focus,.darkfeedbackele>textarea:focus{
+    border: 3px solid rgb(225, 225, 225);
+}
+
+
+.feedbackele>textarea{
+    width: 600px;
+    max-width: 600px;
+    min-width: 600px;
+    height: 100px;
+    max-height:100px ;
+    min-height: 100px;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+
+.feedbtn{
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    background-color: rgb(71, 80, 206);
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+.feedbtn:hover{
+    color: aliceblue;
+    background-color: rgb(21, 6, 87);
+}
+
+
+
+
+#feedback{
+    display: none;
+}
+
+
+
+
+
+
+
+
+.feedbacktype{
+    display: flex;
+    border: 1px solid;
+    padding-left: 10px;
+    height: 50px;
+    width: 600px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    flex-direction: column;
+    overflow: hidden;
+    transition: .4s;
+    cursor: pointer;
+}
+
+
+.feedbackpoint{
+    display: flex;
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+#feedback:checked~.feedbacktype{
+    height: 220px;
+}
+
+
+.selecttype{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    gap: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.selecttype>li>label{
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+
+
+.selecttype:nth-child(3){
+    border-bottom: none;
+}
+
+
+
+.darktheme{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+.thankyou{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    box-shadow: 3px 3px 20px rgba(52, 52, 52, 0.63) inset;
+    background-image: linear-gradient(to top right, rgba(210, 182, 24, 0.744),rgba(255, 166, 0, 0.848),rgba(255, 196, 0, 0.738));
+}
+
+.thankyou>h1{
+    font-size: 40px;
+    margin: 0;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.thankyou>p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+
+.mailink{
+    color: rgb(226, 43, 153);
+}
+
+
+
+.touch{
+    border: none;
+}
+
+
+
+.productcategories{
+    width: calc(100%-80px);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    overflow-y: none;
+    overflow-x: auto;
+    gap: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: .4s;
+}
+
+
+
+
+
+.productimg{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(176, 176, 176, 0.464);
+    transition: .4s;
+}
+
+
+.productimg>img{
+    width: 500px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: auto;
+}
+
+
+.productimg>label{
+    height: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+
+.productimg:hover{
+    transform: scale(1.1);
+}
+
+/*making about responsive*/
+
+@media (max-width:1550px) {
+    
+    .aboutdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left:0px;
+        width: 70%;
+    }
+    
+    
+    
+    
+    .storydiv,.Missiondiv,.productdiv,.customer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+     
+    
+    
+    
+    
+    .circle{
+        position:relative;
+        width: max-content;
+        height: max-content;
+        width: 600px;
+        height: 600px;
+    }
+    
+    
+    .circleimg{
+        background-size: 50%;
+        background-position: 110% 86%;
+        background-image: url(./customersatisfaction.png);
+        background-attachment: fixed;
+    }
+    
+    
+    .circle1{
+        position: absolute;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        left: 15%;
+        top: 0%;
+    }
+    
+    .circle2{
+        position: absolute;
+        border-radius: 50%;
+        top: 0%;
+        right: 0;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .circle3{
+        position: absolute;
+        border-radius: 50%;
+        top: 35%;
+        right: 0%;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .circle4{
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .circle5{
+        position: absolute;
+        border-radius: 50%;
+        top: 45%;
+        left: 38%;
+        width: 350px;
+        height: 350px;
+    }
+    
+    
+    .circle6{
+        position: absolute;
+        border-radius: 50%;
+        top: 60%;
+        left: 5%;
+        width: 150px;
+        height: 150px;
+    }
+    
+    
+    .feedbackform{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    
+
+
+    .touch{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    .thankyou{
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        box-shadow: 3px 3px 20px rgba(52, 52, 52, 0.63) inset;
+        background-image: linear-gradient(to top right, rgba(210, 182, 24, 0.744),rgba(255, 166, 0, 0.848),rgba(255, 196, 0, 0.738));
+    }
+    
+    .thankyou>h1{
+        font-size: 40px;
+        margin: 0;
+        color: #fff;
+        margin-top: 30px;
+    }
+    
+    .thankyou>p{
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 30px;
+        width: 80%;
+    }
+    
+
+
+
+    
+    .productcategories{
+        width: calc(100%-80px);
+        height: 600px;
+        display: flex;
+        align-items: center;
+        overflow-y: none;
+        overflow-x: auto;
+        gap: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        transition: .4s;
+    }
+
+
+
+    .productimg>img{
+        width: 450px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: auto;
+    }
+
+
+    .productimg>label{
+        height: 70px;
+    }
+}
+
+
+@media (max-width:1300px) {
+
+    .productimg>img{
+        width: 400px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: auto;
+    }
+
+
+    .productimg>label{
+        height: 70px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+        font-weight: 600;
+    }
+}
+
+
+
+@media (max-width:950px) {
+    
+    .mainabt>h1{
+        font-size: 35px;
+    }
+
+    .mainabt>p{
+        font-size: 18px;
+    }
+
+
+    .aboutdiv{
+        width: 80%;
+    }
+    
+
+    .aboutdiv>h1{
+        font-size: 35px;
+    }
+
+    .aboutdiv>p{
+        font-size: 20px;
+    }
+
+    
+    .circleimg{
+        background-size: 150%;
+        background-position: 110% 86%;
+        background-image: url(./customersatisfaction.png);
+        background-attachment: fixed;
+    }
+    
+   
+    
+    
+    .feedbackele>label{
+        font-size: 23px;
+        padding-left: 10px;
+    }
+    
+    
+     .feedbackele>[type='text'],.feedbackele>[type='email']{
+        width: 500px;
+        height: 50px;
+    }
+
+
+    .feedbacktype{
+        width: 500px;
+    }
+    .selecttype{
+        width: 400px;
+    }
+    
+     .feedbackele>textarea{
+        width: 500px;
+        max-width: 500px;
+        min-width: 500px;
+    }
+    
+    
+    
+
+
+
+    .touch{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .touch>h1{
+        margin: 0;
+    }
+
+    
+
+
+
+
+
+    .productimg>img{
+        width: 400px;
+    }
+
+
+    .productimg>label{
+        height: 50px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+
+}
+
+
+
+
+
+
+@media (max-width:650px) {
+    .mainabt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainabt>p{
+        width: 80%;
+    }
+
+
+    .square{
+        width: 400px;
+        height: 400px;
+    }
+    
+    
+    .square::after{
+        width: 300px;
+        height: 300px;
+        
+    }
+    
+    
+    .square::before{
+        
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+    .storysquare{
+
+        top:2%;
+        right: 16%;
+    } 
+    
+
+    
+    .missionsquare{
+        top:10.5%;
+        left: 12.5%;
+    } 
+    
+     .missionsquare2{
+        top:0%;
+        left: 25%;
+    }
+    
+    
+    
+    .productsquare{
+        transform: rotate(-40deg);
+        top:0%;
+        right: 21%;
+        z-index: 12;
+        background-image: linear-gradient(to top left ,rgba(253, 216, 146, 0.716),rgba(255, 209, 109, 0.684),rgba(255, 166, 0, 0.363));
+    } 
+    
+     .productsquare2{
+        transform: rotate(-40deg);
+        top:15%;
+        right: 80%;
+    }
+    
+    .productsquare3{
+        top:2.5%;
+        right: 65%;
+    }
+    
+    
+    
+    
+    
+     .circle{
+        position:relative;
+        width: max-content;
+        height: max-content;
+        width: 400px;
+        height: 400px;
+    }
+    
+    
+    .circleimg{
+        background-size: 100%;
+        background-position: 110% 86%;
+        background-image: url(./customersatisfaction.png);
+        background-attachment: fixed;
+    }
+    
+    
+    .circle1{
+        width: 200px;
+        height: 200px;
+        left: 0%;
+        top: 0%;
+    }
+    
+
+    .circle2{
+        top: 0%;
+        right: 10%;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .circle3{
+        top: 35%;
+        right: 0%;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .circle4{
+        position: absolute;
+        top: 52%;
+        left: 10%;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .circle5{        
+        top: 45%;
+        left: 30%;
+        width: 230px;
+        height: 230px;
+    }
+    
+    
+    .circle6{
+        top: 70%;
+        left: 2%;
+        width: 100px;
+        height: 100px;
+    }
+
+
+    
+    
+    
+    
+    
+    .feedbackele>label{
+        font-size: 23px;
+        padding-left: 10px;
+    }
+    
+    
+     .feedbackele>[type='text'],.feedbackele>[type='email']{
+        width: 450px;
+        height: 50px;
+    }
+
+
+    .feedbacktype{
+        width: 450px;
+    }
+    .selecttype{
+        width: 450px;
+    }
+
+    
+     .feedbackele>textarea{
+        width: 450px;
+        max-width: 450px;
+        min-width: 450px;
+    }
+    
+    
+    
+
+
+
+    .touch{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .touch>h1{
+        margin: 0;
+    }
+
+
+
+
+    .productimg>img{
+        width: 300px;
+    }
+
+
+    .productimg>label{
+        height: 50px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+}
+
+
+
+
+@media (max-width:450px) {
+    .mainabt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainabt>p{
+        width: 80%;
+    }
+
+    .mainabt>h1{
+        font-size: 30px;
+    }
+
+    .mainabt>P{
+        font-size: 16px;
+    }
+
+    .aboutdiv>h1{
+        font-size: 30px;
+    }
+
+    .aboutdiv>p{
+        font-size: 16px;
+    }
+
+    .square{
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+    
+    .square::after{
+        width: 200px;
+        height: 200px;
+        
+    }
+    
+    
+    .square::before{
+        
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+    .storysquare{
+        top:10%;
+        right: 20%;
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+    } 
+    
+
+    
+    .missionsquare{
+        top:15%;
+        left: 19%;
+    } 
+    
+     .missionsquare2{
+        top:7%;
+        left: 29%;
+    }
+    
+    
+    
+    .productsquare{
+        top:1%;
+        right: 28%;
+    } 
+    
+     .productsquare2{
+        transform: rotate(90deg);
+        top:-5%;
+        right: 42%;
+    }
+    
+    .productsquare3{
+        top:0%;
+        right: 56%;
+    }
+    
+    
+    
+    
+    
+     .circle{
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+    .circleimg{
+        background-size: 100%;
+        background-position: 110% 86%;
+        background-image: url(./customersatisfaction.png);
+        background-attachment: fixed;
+    }
+    
+    
+    .circle1{
+        width: 130px;
+        height: 130px;
+        left: 0%;
+        top: 0%;
+    }
+    
+
+    .circle2{
+        top: 5%;
+        right: 10%;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .circle3{
+        top: 35%;
+        right: 0%;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .circle4{
+        top: 23%;
+        left: 45%;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .circle5{        
+        top: 50%;
+        left: 30%;
+        width: 150px;
+        height: 150px;
+    }
+    
+    
+    .circle6{
+        top: 45%;
+        left: 0%;
+        width: 80px;
+        height: 80px;
+    }
+
+
+    
+
+    
+    
+    .feedbackele>label{
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    
+    
+     .feedbackele>[type='text'],.feedbackele>[type='email']{
+        width: 300px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+
+    .feedbacktype{
+        width: 300px;
+    }
+    .selecttype{
+        width: 300px;
+    }
+
+    .feedbackpoint{
+        font-size: 14px;
+        padding-top: 15px;
+    }
+
+    #feedback:checked~.feedbacktype{
+        height: 190px;
+    }
+    
+    .selecttype>li>label{
+        font-size: 14px;
+    }
+
+
+    .feedbtn{
+        font-size: 16px;
+        height: 40px;
+        width: 100px;
+    }
+
+    
+     .feedbackele>textarea{
+        font-size: 16px;
+        width: 300px;
+        max-width: 300px;
+        min-width: 300px;
+    }
+    
+    
+
+
+    .touch{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .thankyou>h1{
+        font-size: 23px;
+    }
+    .thankyou>p{
+        font-size: 16px;
+    }
+
+
+    .productcategories{
+        height: 500px;
+    }
+
+    .productimg>img{
+        width: 200px;
+    }
+
+
+    .productimg>label{
+        height: 50px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:300px) {
+
+    .mainabt>p{
+        width: 80%;
+    }
+
+    .mainabt>h1{
+        font-size: 26px;
+    }
+
+    .mainabt>P{
+        font-size: 14px;
+    }
+
+    .aboutdiv>h1{
+        font-size: 23px;
+    }
+
+    .aboutdiv>p{
+        font-size: 12px;
+    }
+
+    .square{
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+    
+    .square::after{
+        width: 150px;
+        height: 150px;
+        
+    }
+    
+    
+    .square::before{
+        
+        width: 150px;
+        height: 150px;
+    }
+    
+    
+    .storysquare{
+        top:0%;
+        right: 10%;
+    } 
+    
+
+    
+    .missionsquare{
+        top:8%;
+        left: 10%;
+    } 
+    
+     .missionsquare2{
+        top:-3%;
+        left: 23%;
+    }
+    
+    
+    
+    .productsquare{
+        top: -5%;
+        right: 20%;
+    } 
+    
+     .productsquare2{
+        transform: rotate(90deg);
+        top:-15%;
+        right: 40%;
+    }
+    
+    .productsquare3{
+        top: -6%;
+        right: 61%;
+    }
+    
+    
+    
+     .circle{
+        width: 250px;
+        height: 250px;
+    }
+    
+    
+    .circleimg{
+        background-size: 150%;
+    }
+    
+    
+    .circle1{
+        width: 100px;
+        height: 100px;
+        left: 0%;
+        top: 0%;
+    }
+    
+
+    .circle2{
+        top: 3%;
+        right: 10%;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .circle3{
+        top: 30%;
+        right: 0%;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .circle4{
+        top: 23%;
+        left: 45%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .circle5{        
+        top: 50%;
+        left: 30%;
+        width: 130px;
+        height: 130px;
+    }
+    
+    
+    .circle6{
+        top: 45%;
+        left: 5%;
+        width: 70px;
+        height: 70px;
+    }
+
+
+    
+    
+    
+   
+    
+    
+    .feedbackele>label{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    
+    
+     .feedbackele>[type='text'],.feedbackele>[type='email']{
+        width: 200px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+
+    .feedbacktype{
+        width: 200px;
+        font-size: 16px;
+    }
+    .selecttype{
+        width: 200px;
+        font-size: 16px;
+        gap: 5px;
+    }
+
+    .feedbackpoint{
+        font-size: 12px;
+        padding-top: 15px;
+    }
+
+    #feedback:checked~.feedbacktype{
+        height: 170px;
+    }
+    
+    .selecttype>li>label{
+        font-size: 12px;
+    }
+
+    .feedbtn{
+        font-size: 12px;
+        height: 40px;
+        width: 100px;
+    }
+
+    
+     .feedbackele>textarea{
+        font-size: 12px;
+        width: 200px;
+        max-width: 200px;
+        min-width: 200px;
+    }
+    
+    
+
+
+    .touch{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .thankyou>h1{
+        font-size: 20px;
+    }
+    .thankyou>p{
+        font-size: 14px;
+    }
+
+
+    .productcategories{
+        height: 300px;
+    }
+
+}
